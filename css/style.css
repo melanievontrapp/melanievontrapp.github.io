@@ -1,0 +1,1224 @@
+
+
+/*
+@font-face{
+    font-family: Futura Std;
+    src: url("../assets/FuturaStd-ExtraBold.otf") format("opentype");
+    font-family: Futura Med;
+    src: url("../assets/FuturaStd-Medium.otf") format("opentype");
+}
+*/
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+
+/* Better box model */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: -1px;
+    overflow:hidden;
+
+}
+
+
+.outernav {
+font-family: futura-pt;
+    letter-spacing: 2px;
+    font-size: 12px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+
+
+/* quick voter's guide underline   */
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+/* Nav words  */
+.outernav * {
+    pointer-events: auto;
+      color:azure;
+    margin-right: auto;
+}
+
+/*
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    position: relative;
+}
+*/
+
+.nav-number {
+    font-family: futura-pt;
+    font-weight: 800;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 6vmin;
+    color: transparent;
+    -webkit-text-stroke: 0.02em rgb(250, 250, 250);
+}
+.nav-number::after{
+    content: attr(data-fill);
+    transition: all 0.9s cubic-bezier(0.19, 1, 0.4, 1) 0s;
+    pointer-events: none;
+    width: 0%;
+    overflow:hidden;
+    color:whitesmoke;
+/*    opacity: 0.5;*/
+    position:absolute;
+    top:6px;
+    left:0;
+    white-space: nowrap;
+}
+
+.nav-number:hover::after{
+    width:100%;
+}
+
+.outernav__chapter-item p {
+    text-align: left;
+    font-size: .75em;
+    padding-left: .55em;
+    margin: 0;
+    font-weight: 100;
+    color: #1e1e1e;
+    -webkit-text-stroke: 0;
+    line-height: 1.5;
+}
+
+
+
+/*homepage*/
+.home .splashhome {
+    color:azure;
+font-family: futura-pt;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.home.image {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+
+.home .header {
+    color:azure;
+font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.home .splash-header {
+    color:azure;
+font-family: futura-pt;
+    font-size: 200px;
+    text-transform: uppercase;
+    text-align: center;
+     max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.home .splash-two {
+font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.02em rgb(250, 250, 250);  
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    
+    
+   
+}
+
+.home .splash-three {
+font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.02em rgb(250, 250, 250);  
+   max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+   
+}
+
+
+
+.home .headerd {
+    color:dimgray;
+font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.home .smallheadd {
+    color:dimgray;
+font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.home .smallhead {
+    color:azure;
+font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.home .paragraph {
+font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    line-height:normal; 
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.home .paragraphd {
+font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+}
+
+.home .smallparagraph {
+font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    line-height:normal; 
+   max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.home .smallparagraphd {
+font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    font-size: 15px;
+}
+
+
+section.home:nth-child(1) {
+/*    this is the sticky nav?*/
+}
+
+section.home:nth-child(2) {
+    background-color:#333;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.home:nth-child(3) {
+/*    background: url(../img/sharon-mccutcheon-580064-unsplash.jpg);*/
+    background-color:darksalmon;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.home:nth-child(4) {
+    background: url(../img/sharon-mccutcheon-580064-unsplash.jpg);
+    background-color:darkseagreen;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.home .video {
+ background: center;
+width:110%;
+position: fixed;
+top: ;
+left: 0;
+z-index: -100;
+}
+
+
+.home .quote {
+font-family: futura-pt;
+    font-size: 40px;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    color:azure;
+    
+}
+
+
+
+/*elections page styles*/
+.elect .splashhome {
+    color:azure;
+font-family: futura-pt;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.elect .image-elect {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+
+.elect  .header{
+    color:azure;
+font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.elect .headerd {
+    color:dimgrey;
+font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.elect .smallhead{
+    color:azure;
+font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.elect .smallheadd {
+    color:dimgray;
+font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+    
+}
+
+.elect .splash-two{
+font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.02em rgb(250, 250, 250);  
+   max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+   
+}
+
+.elect .paragraph{
+font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    font-size: 20px;
+    line-height:normal; 
+   max-width: 25em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.elect .smallparagraph {
+font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    line-height:normal; 
+      max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 20px;
+}
+
+.elect .smallparagraphd{
+font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    font-size: 17px;
+}
+
+
+.elect .column {
+    float: left;
+    width: 50%;
+}
+
+.elect .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.elect .header {
+    padding-bottom: 2px;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.elect .button{
+font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 0.005em rgb(250, 250, 250);        
+
+}
+
+.elect .countdown-box{
+font-family: futura-pt;
+    color: azure;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    font-size: 36px; 
+  
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
+
+
+.elect .quote{
+font-family: futura-pt;
+    font-size: 36px;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    color:azure;
+    
+}
+
+
+
+
+section.elect:nth-child(1) {
+/*    this is the sticky nav?*/
+}
+
+section.elect:nth-child(2) {
+    background-color:darksalmon;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.elect:nth-child(3) {
+        
+    background-color:#333;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.elect:nth-child(4) {
+
+   background-color:darkseagreen;
+
+}
+
+
+section.elect:nth-child(5) {
+
+   background-color:#333;
+
+}
+
+/*registeration styles*/
+
+.register .splashhome {
+    color:azure;
+   font-family: futura-pt;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+
+.register .image {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+
+.register .header {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.register .headerd {
+    color:dimgray;
+    font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.register .smallhead {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.register .paragraph {
+    font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    font-size: 20px;
+    line-height:normal; 
+    max-width: 22em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.register .paragraphd {
+    font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    
+}
+
+.register .smallparagraph {
+    font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    line-height:normal; 
+     max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 20px;
+}
+
+
+.register .column {
+    float: left;
+    width: 50%;
+}
+
+.register .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+ 
+
+.register .button {
+    font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 0.005em rgb(250, 250, 250);        
+
+}
+
+.register .quote {
+    font-family: futura-pt;
+    font-size: 40px;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    color:azure;
+    
+}
+
+.quillA {
+    position: absolute;
+    left:-215px;
+    top:215px;
+    z-index: 99;
+    animation-name: flightpathA;
+    animation-delay: 0s;
+    animation-duration: 4.5s;       
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform: rotate(70deg) scale(.10,.10);
+}
+
+@keyframes flightpathA {
+    0%   {left:-15px; top:10px;}
+    50%  {left:300px; top:125px;}
+    100% {left:1200px; top:200px;}
+}
+
+.quillB {
+    position: absolute;
+    left:-115px;
+    top:210px;
+    z-index: 99;
+    animation-name: flightpathB;
+    animation-delay: 0s;
+    animation-duration: 4.5s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform: rotate(50deg) scale(.10,.10);
+}
+
+@keyframes flightpathB {
+    0%   {left:-315px; top:410px;}
+    40%  {left:800px; top:225px;}
+    100% {left:-300px; top:400px;}
+}
+
+.quillC {
+    position: absolute;
+    left:-215px;
+    top:210px;
+    z-index: 99;
+    animation-name: flightpathC;
+    animation-delay: 0s;
+    animation-duration: 4.5s;   
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    transform: rotate(50deg) scale(.10,.10);
+}
+
+@keyframes flightpathC {
+    0%   {left:115px; top:10px;}
+    90%  {left:50px; top:305px;}
+    100% {left:100px; top:400px;}
+}
+
+.quillD {
+    position: absolute;
+    left:-315px;
+    top:210px;
+    z-index: 99;
+    animation-name: flightpathD;
+    animation-delay: 0s;
+    animation-duration: 4.5s;   
+/*    animation-timing-function: ease-out;*/
+    animation-iteration-count: infinite;
+    transform: rotate(50deg) scale(.10,.10);
+}
+
+@keyframes flightpathD {
+    0%   {left:900px; top:-510px;}
+    60%  {left:600px; top:25px;}
+    80% {left:200px; top:100px;}
+    100% {left:-200px; top:-300px;}
+}
+
+
+
+
+section.register:nth-child(1) {
+/*    this is the sticky nav?*/
+}
+
+section.register:nth-child(2) {
+   background: 
+        linear-gradient(
+      rgba(10, 10, 10, 0.45), 
+      rgba(10, 10, 10, 0.45)
+    ),
+       url(../img/reg2.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+section.register:nth-child(3) {
+    background-color:darkseagreen;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.register:nth-child(4) {
+    background-color:#333;
+}
+
+section.register:nth-child(5) {
+
+   background-color:darksalmon;
+
+}
+section.register:nth-child(6) {
+ background: url(../img/gif.gif);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+
+/*candidates styles*/
+
+.candi .image {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.candi .splashhome {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.candi .splash-two {
+    font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.02em rgb(250, 250, 250);  
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    
+}
+
+.candi .header {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.candi .headerd {
+    color:dimgray;
+    font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.candi .smallheadd {
+    color:dimgray;
+    font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.candi .smallhead {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 20px;
+    padding-bottom: 5px;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.candi .paragraph {
+    font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    font-size: 20px;
+    line-height:normal; 
+   max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.candi .paragraphd {
+    font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+}
+
+.candi .smallparagraph {
+    font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    line-height:normal; 
+     max-width: 27em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 19px;
+}
+
+.candi .smallparagraphd {
+    font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    font-size: 17px;
+}
+
+
+.candi .column {
+    float: left;
+    width: 50%;
+}
+
+.candi .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.candi .button {
+    font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 0.005em rgb(250, 250, 250);        
+
+}
+
+.candi .quote {
+    font-family: futura-pt;
+    font-size: 40px;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    color:azure;
+    
+}
+
+
+section.candi:nth-child(1) {
+/*    this is the sticky nav?*/
+   
+}
+
+section.candi:nth-child(2){
+   background: 
+       linear-gradient(
+      rgba(10, 10, 10, 0.45), 
+      rgba(10, 10, 10, 0.45)
+    ),
+       url(../img/inspect1.jpg);
+   overflow: hidden;
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+
+    
+}
+
+section.candi:nth-child(3), #reg {
+    background-color:darksalmon;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.candi:nth-child(4) {
+    background-color:#333;
+}
+
+/*vote page styles*/
+
+ .vote .image {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
+.vote .splashhome {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+
+.vote .splash-two {
+    font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 0.02em rgb(250, 250, 250);  
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+    
+
+.vote .header {
+    color:azure;
+    font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+     max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    z-index: 999;
+}
+
+.vote .headerd {
+    color:dimgray;
+    font-family: futura-pt;
+    font-size: 48px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.vote .smallhead {
+    color:dimgray;
+    font-family: futura-pt;;
+    font-size: 20px;
+    padding-bottom: 5px;
+    max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+}
+
+.vote .paragraph {
+    font-family: futura-pt;
+    color: azure;
+    text-align: center;
+    line-height:normal; 
+    max-width: 22em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 20px;
+    z-index: 999;
+}
+
+.vote .paragraphd {
+    font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    font-size: 20px;
+}
+
+.vote .smallparagraph {
+    font-family: futura-pt;
+    color: dimgray;
+    text-align: center;
+    line-height:normal; 
+     max-width: 21em;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 20px;
+}
+
+
+.vote .column {
+    float: left;
+    width: 50%;
+}
+
+.vote .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+.vote .button {
+    font-family: futura-pt;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: transparent;
+    -webkit-text-stroke: 0.005em rgb(250, 250, 250);        
+
+}
+
+
+
+
+section.vote:nth-child(1) {
+/*    this is the sticky nav?*/
+}
+
+section.vote:nth-child(2) {
+background: url(../img/giphy.gif);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 160%;
+   
+    
+}
+
+section.vote:nth-child(3) {
+    background-color:darksalmon;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.vote:nth-child(4) {
+    background-color:darkseagreen;
+}
+
+section.vote:nth-child(5) {
+   font-family: futura-pt;
+   text-align: center;
+   color:aliceblue;    
+   font-size: 48px;
+   padding-left: 300px;
+   padding-right: 300px;    
+   background: url(../img/michelle-1480852405.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+
+
+.vote .quote {
+    font-family: futura-pt;
+    font-size: 40px;
+    text-align: center;
+    line-height:normal; 
+    padding-right: 450px;
+    padding-left: 450px;
+    color:azure;
+    
+}
+
+
+ 
+ .vote .mickyvid {
+    object-fit:cover;
+    position: absolute;
+    top:10;
+    left:-20;
+    right: 20;
+    bottom: -10;
+    width: 150%;
+     
+}
+
+
+
+.djQpgt:hover{
+    width:20px;
+    overflow:hidden;
+    background-color:black;
+}
+.under{
+    
+}
+
+
+
+.outernav_active {
+    display:inline-block
+}
+
+
+
+.filled {
+    font-family: futura-pt;
+    font-weight: 800;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 6vmin;
+    color: whitesmoke;
+/*    -webkit-text-stroke: 0.02em rgb(250, 250, 250);*/
+}
+
+
+
+.michelle-obama {
+    font-family: futura-pt;
+    text-align: center;
+    font-size: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+
+
+.countdown-box  h1  {
+    border: solid;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown-title {
+    font-family: futura-pt;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+
+
+
+
+/*
+@media (max-width: 768px) {
+   background-position: 90% 10%;
+   min-height: 260px;
+}
+*/

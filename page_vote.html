@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Voter's Guide Vote</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.typekit.net/jgw0yoc.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+
+</head>
+
+
+<body class="vote">
+
+
+    <div>
+        <div class="outernav">
+            <div class="outnav_top">
+                <a href="homepage.html">
+                    <h2 class="splashhome">Quick Voter's Guide</h2>
+                </a>
+
+                <ul class="outernav_chapter">
+                    <li>
+                        <a class="outernav_active" href="page_elections.html">
+                            <span class="nav-number" data-fill="01">01 </span>
+
+                            <p>
+                                Elections
+                            </p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="outernav_active" href="page_registering.html">
+                            <span class="nav-number" data-fill="02">02</span>
+                            <p>
+                                Registering
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="outernav_active" href="page_candidates.html">
+                            <span class="nav-number" data-fill="03">03 </span>
+                            <p>
+                                Researching <br> Candidates
+                            </p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a class="outernav_active" href="page_vote.html">
+                            <span class="filled" data-fill="04">04</span>
+                            <p>
+                                Voting
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="vote" id="vote">
+       <h1 class="header">Voting on Election Day</h1>
+
+        <h2 class="paragraph">Going to the polls will require some planning ahead.
+            To find out where your closest poll booth is located check your county’s election site.
+            Due to voting day occuring on a Tuesday, you will need to arrange with your work schedule to get that time off.
+            Typically poll booths are open from 7am-7pm.
+        </h2>
+<!--
+        <video autoplay playsinline loop muted class="mickyvid">
+            <source src="/img/mickeyvideo.mp4" type="video/mp4" AddType video/mp4 mp4 mp4v mpg4
+AddType video/ogg ogv>
+        </video>
+-->
+        
+    </section>
+
+
+
+    <section class="vote" id="reg">
+
+        <h1 class="header">Mailing Your Ballot</h1>
+
+        <p class="paragraph">Some states also allow voters to cast their vote by mail. Voters will receive an official ballot to complete and insert into the security envelope which is placed in the ballot return envelope and signed by the voter. The ballot return envelope can be stamped and mailed or dropped off at any official drop box across the state. If a voter casts their ballot after the Wednesday before an election, the ballot should be left at a drop box site to ensure it’s counted.
+
+            Ballots must be received by 8 p.m. on Election Day. </p>
+
+    </section>
+
+
+
+    <section class="vote">
+
+        <h1 class="splash-two">Absentee Voting</h1>
+
+        <p class="paragraph">Students attending an out-of-state college or voters traveling during an election can still recieve a ballot. Fill out an absentee ballot request form your county’s elections office and return it.
+        </p>
+
+        <h1 class="splash-two">Age and Citizenship Concerns</h1>
+
+
+        <p class="paragraph">If you are 16 years old, you will not receive a ballot until an election occurs on or after your 18th birthday. If you will receive your citizenship on or before an election, you must submit a voter registration card before the 21-day voter registration deadline. After taking your oath, you must appear and provide evidence of citizenship to the elections office in the county where you live, on or before Election Day. </p>
+
+
+    </section>
+
+
+
+    <section class="vote" id="vote"> <a name="vote"> </a>
+
+        <!-- Display the countdown timer in an element -->
+        <h1 id="demo"> </h1>
+
+        <script>
+            // initialize variables. Counter is the index of the word about to be added to the DOM
+            // quote is made into an array... for every space a new item is added
+            // display string is the variable that persists the printed message
+            // interval is the number of milisecond between function calls
+            var count = 0;
+            var quote = '“You’ve got to vote, vote, vote, vote. That’s it; that’s the way we move forward. That’s how we make progress for ourselves and for our country.” ~Michelle Obama'.split(' ');
+            var displayString = '';
+            var interval = 420;
+
+
+            // Update the count down every 1 second with a special function that runs another function (passed in as a argument) after a set interval
+            var x = setInterval(function() {
+
+                // grab word from quote array and add to html string at index = counter
+                var word = quote[count];
+                displayString += " " + word;
+
+                // inject string into the HTML
+                document.getElementById("michelle-quote").innerHTML = displayString;
+
+                // if the counter equals the length of the array it resets
+                if (quote.length === count) {
+                    displayString = '';
+                    document.getElementById("michelle-quote").innerHTML = '';
+                    count = 0;
+                } else {
+                    count += 1;
+                };    
+            }, interval);
+        </script>
+
+        <h1 id="michelle-quote"></h1>
+    </section>
+
+
+</body>
+</html>
